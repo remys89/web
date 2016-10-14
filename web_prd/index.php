@@ -16,9 +16,9 @@
 	</style>
 </head>
 <body>
-	<img id="logo" src="logo.png" />
+	<img id="roel" src="roel.jpg" />
 	<h1><?php echo "Hello ".($_ENV["NAME"]?$_ENV["NAME"]:"world")."!"; ?></h1>
-	<?php if($_ENV["HOSTNAME"]) {?><h3>My hostname was <?php echo $_ENV["HOSTNAME"]; ?></h3><?php } ?>
+	<?php if($_ENV["HOSTNAME"]) {?><h3>Production ! And this is dangerous, ask the guy above if you want stuff happening here... My hostname is <?php echo $_ENV["HOSTNAME"]; ?></h3><?php } ?>
 	<?php
 	$links = [];
 	foreach($_ENV as $key => $value) {
